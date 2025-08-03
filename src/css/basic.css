@@ -12,6 +12,10 @@ html {
   visibility: hidden;
 }
 
+.body {
+  background-color: #e0cbb4;
+}
+
 .container {
   min-width: 288px;
   margin: 0 auto;
