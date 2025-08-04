@@ -1,7 +1,8 @@
 .quality {
   padding-top: 64px;
   padding-bottom: 64px;
-  padding: 0 16px;
+  padding-right: 16px;
+  padding-left: 16px;
   font-family: 'Quicksand', sans-serif;
   color: #0b0803;
   background-color: #e0cbb4;
