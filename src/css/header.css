@@ -1,6 +1,9 @@
 .header {
   background-color: #e0cbb4;
-  position: sticky;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .header-wrapper {
@@ -14,6 +17,23 @@
   justify-content: center;
   align-items: center;
   padding: 18px 0;
+
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .header-logo-icon {
