@@ -1,10 +1,10 @@
 
       document.addEventListener("DOMContentLoaded", () => {
         const messages = [
-          "Welcome to CoffeJoy!",
-          "The best coffee in town!",
-          "One cup makes your day!",
-          "Enjoy the aroma and taste!"
+          "*Welcome to CoffeJoy!*",
+          "*The best coffee in town!*",
+          "*One cup makes your day!*",
+          "*Enjoy the aroma and taste!*"
         ];
         let messageIndex = 0;
         let charIndex = 0;
