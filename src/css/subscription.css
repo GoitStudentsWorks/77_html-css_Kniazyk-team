@@ -14,7 +14,7 @@
 }
 
 .subscription-container {
-  position: relative;
+  position: fixed;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -98,11 +98,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .subscription-section {
-    padding-right: 32px;
-    padding-left: 32px;
-  }
-
   .subscription-container {
     padding: 64px;
     gap: 48px;
