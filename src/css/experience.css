@@ -74,6 +74,10 @@
     gap: 32px;
   }
 
+  .section-title {
+    gap: 24px;
+  }
+
   .experience-list {
     flex-direction: row;
     flex-wrap: wrap;
