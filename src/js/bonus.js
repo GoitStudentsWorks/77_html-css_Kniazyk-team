@@ -1,19 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('subscribe-form');
-  const input = document.getElementById('subscribe-input');
-  const backdrop = document.getElementById('subscription');
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".subscribe-form");
+  const modal = document.getElementById("subscription");
+  const closeBtn = document.getElementById("subscription-close-btn");
+  const closeBigBtn = document.querySelector(".subscription-big-btn-close");
 
-  form.addEventListener('submit', (event) => {
-    event.preventDefault(); // зупиняємо стандартне надсилання
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-    const email = input.value.trim();
-
-    // базова перевірка email (можна замінити на більш складну)
-    if (email && email.includes('@')) {
-      backdrop.classList.add('is-open');
-      form.reset(); // очищення поля
+    // Перевірка валідності через HTML API
+    if (form.checkValidity()) {
+      modal.classList.add("is-open");
     } else {
-      alert('Введи коректну email-адресу 📨');
+      form.reportValidity();
     }
+  });
+
+  // Закриття модалки
+  closeBtn.addEventListener("click", () => {
+    modal.classList.remove("is-open");
+  });
+
+  closeBigBtn.addEventListener("click", () => {
+    modal.classList.remove("is-open");
   });
 });
