@@ -230,6 +230,7 @@
   .subscribe-picture {
     width: 640px;
     height: 400px;
+    transition: transform 5s ease-in-out;
   }
 
   .subscribe-image-wrapper {
@@ -237,5 +238,13 @@
     border-radius: 40px;
     max-width: 640px;
     height: auto;
+    overflow: hidden;
   }
+}
+
+.subscribe-picture:hover {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+transform: scale(1.2);
 }
