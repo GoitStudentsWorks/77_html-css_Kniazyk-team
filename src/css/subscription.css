@@ -8,6 +8,14 @@
   background: rgba(0, 0, 0, 0.25);
 }
 
+.subscription-section {
+  padding: 64px 287px;
+}
+
+.subscription-section .container {
+  margin: 0 auto;
+}
+
 .is-open {
   opacity: 1;
   visibility: visible;
