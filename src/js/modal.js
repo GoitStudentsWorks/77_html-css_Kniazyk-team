@@ -10,4 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
   closeBtn.addEventListener('click', () => {
     mobileMenu.classList.remove('is-open');
   });
+
+  mobileMenu.addEventListener('click', e => {
+    if (e.target.nodeName === 'A') {
+      mobileMenu.classList.remove('is-open');
+      console.log(e.target);
+    }
+  });
 });
